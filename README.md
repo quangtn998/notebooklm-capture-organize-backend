@@ -66,14 +66,14 @@ uvicorn app.main:app --reload --host 127.0.0.1 --port 8787
 - auth endpoints now have simple in-memory rate limiting
 - API responses now include request IDs, `Cache-Control: no-store`, and baseline security headers
 
-## Render deployment
+## Alternate Render deployment
 
 This repo now ships a Render blueprint and Docker image definition:
 
 - `/Users/tranngocquang/extension/render.yaml`
 - `/Users/tranngocquang/extension/backend/Dockerfile`
 
-Render was chosen because the current FastAPI backend still uses SQLite and needs a persistent writable volume.
+The Render files remain in the repo as a fallback deployment path. The current live production target is the Oracle Cloud Always Free host.
 
 ## Google OAuth
 

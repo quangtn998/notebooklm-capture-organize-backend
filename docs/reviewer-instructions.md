@@ -64,7 +64,7 @@ Short version:
 
 - `tabs`, `activeTab`, `scripting`: required to inspect the active NotebookLM tab and inject companion UI/actions
 - `debugger`, `offscreen`, `tabCapture`, `downloads`: required for page capture and recording-related flows inherited by the companion build
-- backend origins are now pinned to local dev plus the hosted Render production service
+- backend origins are now pinned to local dev plus the hosted Oracle Cloud production service
 
 ## Deferred features
 
