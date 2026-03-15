@@ -11,7 +11,10 @@ from .http_helpers import data_response
 
 
 router = APIRouter()
-DOCS_DIR = Path(__file__).resolve().parents[2] / "docs"
+DOCS_DIR_CANDIDATES = (
+    Path(__file__).resolve().parents[2] / "docs",
+    Path(__file__).resolve().parents[1] / "docs",
+)
 
 
 def _render_page(title: str, body_html: str) -> HTMLResponse:
@@ -85,7 +88,13 @@ def _render_page(title: str, body_html: str) -> HTMLResponse:
 
 
 def _render_markdown_document(filename: str, page_title: str, eyebrow: str) -> HTMLResponse:
-    lines = (DOCS_DIR / filename).read_text(encoding="utf-8").splitlines()
+    for docs_dir in DOCS_DIR_CANDIDATES:
+        candidate = docs_dir / filename
+        if candidate.exists():
+            lines = candidate.read_text(encoding="utf-8").splitlines()
+            break
+    else:
+        raise FileNotFoundError(f"Unable to find {filename} in docs directories: {DOCS_DIR_CANDIDATES!r}")
     parts = [f'<div class="card"><p class="eyebrow">{escape(eyebrow)}</p>']
     list_open = False
     for raw_line in lines:
