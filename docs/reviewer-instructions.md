@@ -19,9 +19,9 @@ This extension owns:
 
 1. Sign in to a Google account that has access to NotebookLM.
 2. Sign in to `https://notebooklm.google.com/`.
-3. Ensure the hosted backend is reachable at `https://notebooklm-capture-organize-backend.onrender.com`.
-4. Public support page: `https://notebooklm-capture-organize-backend.onrender.com/support`
-5. Public privacy policy: `https://notebooklm-capture-organize-backend.onrender.com/privacy-policy`
+3. Ensure the hosted backend is reachable at `https://140.245.110.91.sslip.io`.
+4. Public support page: `https://140.245.110.91.sslip.io/support`
+5. Public privacy policy: `https://140.245.110.91.sslip.io/privacy-policy`
 6. Open the extension Support route if you need to confirm or switch the backend target.
 
 ## Primary review flows

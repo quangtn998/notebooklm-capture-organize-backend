@@ -70,10 +70,10 @@ Those remain part of the user's NotebookLM and Google account context.
 
 Public support site:
 
-- `https://notebooklm-capture-organize-backend.onrender.com/support`
+- `https://140.245.110.91.sslip.io/support`
 
 Public privacy policy URL:
 
-- `https://notebooklm-capture-organize-backend.onrender.com/privacy-policy`
+- `https://140.245.110.91.sslip.io/privacy-policy`
 
 If `PUBLIC_SUPPORT_EMAIL` is configured on the hosted backend, the support page will also display the direct support email.

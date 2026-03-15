@@ -52,7 +52,7 @@ uvicorn app.main:app --reload --host 127.0.0.1 --port 8787
 ## Notes
 
 - The extension defaults to `http://127.0.0.1:8787`
-- The chosen production host is `https://notebooklm-capture-organize-backend.onrender.com`
+- The chosen production host is `https://140.245.110.91.sslip.io`
 - The support route can switch the runtime backend target between the pinned local and production origins
 - Email/password auth works without Google OAuth setup
 - Google OAuth is optional and only needed if you want `Continue with Google`

@@ -112,10 +112,10 @@ def create_app(settings_override: Settings | None = None) -> FastAPI:
                 "AllowedBackendOrigins": [
                     "http://127.0.0.1:8787",
                     "http://localhost:8787",
-                    "https://notebooklm-capture-organize-backend.onrender.com",
+                    "https://140.245.110.91.sslip.io",
                 ],
                 "CompanionTarget": "https://notebooklm.google.com",
-                "DeploymentProvider": "render",
+                "DeploymentProvider": "oracle-cloud-compute",
                 "SupportURL": settings.support_url,
                 "PrivacyPolicyURL": settings.privacy_policy_url,
                 "ReviewerNotesURL": settings.reviewer_notes_url,
